@@ -1,0 +1,51 @@
+/* General css */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+/* spacing and type scale */
+/* --- 07 WHITESPACE
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+- Spacing system (px)
+ */
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+/* general css */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+/* end of general css */
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  max-height: 100%;
+  overflow-x: hidden;
+}
+/* Set core body defaults */

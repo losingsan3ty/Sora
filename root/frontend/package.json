@@ -4,6 +4,8 @@
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
@@ -28,6 +30,7 @@
     "colorette": "^2.0.19",
     "commander": "^2.20.3",
     "cross-spawn": "^7.0.3",
+    "dotenv": "^16.0.3",
     "electron-to-chromium": "^1.4.284",
     "enhanced-resolve": "^5.12.0",
     "envinfo": "^7.8.1",
@@ -99,7 +102,7 @@
     "wildcard": "^2.0.0"
   },
   "scripts": {
-    "build": "webpack ",
+    "build": "webpack",
     "dev": "webpack serve"
   },
   "author": "",
