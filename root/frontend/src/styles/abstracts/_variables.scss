@@ -1,45 +1,54 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+// primary color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
-// --clr-primary: #ea3882;
-//   --clr-primary-1-lighter: #ee609b;
-//   --clr-primary-2-lighter: #f288b4;
-//   --clr-primary-3-lighter: #fdebf3;
-//   --clr-secondary: #00072d;
-//   --clr-background: #fcf5df;
-//   --clr-dark: #00072d;
-//   --clr-dark-1-lighter: #1a2042;
-//   --clr-dark-2-lighter: #333957;
-//   --clr-white: #ffffff;
-//   --clr-gray: #2e2e2e;
-//   --clr-gray-1-lighter: #6d6d6d;
-//   --clr-gray-2-lighter: #979797;
-//   --mainTransition: all 0.3s ease-in-out;
-//   --spacing-xxxxl: 9.2rem;
-//   --spacing-xxxl: 7.2rem;
-//   --spacing-xxl: 6.4rem;
-//   --spacing-xl: 4.8rem;
-//   --spacing-l: 3.2rem;
-//   --spacing-ml: 2.4rem;
-//   --spacing-m: 1.2rem;
-//   --spacing-s: 0.8rem;
-//   --spacing-xs: 0.4rem;
+$clr-primary: rgb(0, 0, 0) !default;
+
+// main white color
+/// @type Color
+$clr-white: rgb(255, 255, 255) !default;
+
+/// Light grey
+/// @type Color
+$clr-light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$clr-mid-grey: rgb(153, 153, 153) !default;
+
+/// @type Color
+$clr-dark-grey: rgb(68, 68, 68) !default;
+// $color-grey-light-1: #f9f7f6;
+// $color-grey-light-2: #aaa;
+
+// $color-grey-dark-1: #54483A;
+// $color-grey-dark-2: #6D5D4B;
+/// Dark grey
+
+/// @type Font-weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weigh-bold: 700;
+
+/// @type type-scale
+// $fs-250: 1.2rem;
+// $fs-300: 1.4rem;
+$fs-400: 1.44rem;
+$fs-500: 1.728rem;
+$fs-600: 2.2rem;
+$fs-650: 2.8rem;
+$fs-700: 3.1rem;
+$fs-800: 4rem;
+$fs-900: 6rem;
+
 //   --curr-screen-width: 100vw;
 //   --container-screen-ratio: calc(100vw * 0.1);
-//   --header-letter-spacing: -0.5px;
-//   --text-letter-spacing: 0.75px;
-//   --fs-xxl: 4.3rem;
-//   --fs-xl: 3.283rem;
-//   --fs-l: 2.887rem;
-//   --fs-ml: 2.566rem;
-//   --fs-m: 2.027rem;
-//   --fs-s: 1.728rem;
-//   --fs-xs: 1.44rem;
-//   --fs-xxs: 1.2rem;
-//   --main-transition: ;
-// }
+/// Open Sans font family
+/// @type List
+$main-font-stack: "Open Sans", sans-serif !default;
+
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;

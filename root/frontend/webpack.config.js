@@ -18,7 +18,7 @@ module.exports = {
   // devtool: "source-map",
   devServer: {
     static: { directory: path.resolve(__dirname, "dist") },
-    watchFiles: ["src/templates/*.html"],
+    watchFiles: ["src/templates/*.html", "src/styles/*.scss"],
     hot: true,
     port: 3000,
     open: true, //open the browser
@@ -29,8 +29,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(scss|css)$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "resolve-url-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: /\.js$/,
@@ -44,23 +60,18 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         type: "asset/resource",
         generator: {
           filename: "images/[name][ext]",
         },
-        // generator: {
-        //   "asset/resource": {},
-        // },
-        // options: {
-        //   name: "[path][name].[ext]",
-        //   outputPath: "images",
-        // },
       },
       {
         test: /\.html$/i,
         loader: "html-loader",
       },
+
+      // to resolve the issue of not being able to use images in scss/css
     ],
   },
   plugins: [
