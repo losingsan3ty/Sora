@@ -7,24 +7,22 @@ $clr-primary: #1a1a1a !default;
 
 // main white color
 /// @type Color
-$clr-white: rgb(255, 255, 255) !default;
+$clr-white: #ffffff !default;
 
 /// Light grey
 /// @type Color
 
-$clr-light-grey: rgb(240, 240, 240) !default;
-
+$clr-light-grey: #f0f0f0 !default;
+$clr-grey: #cccccc;
 /// Medium grey
 /// @type Color
-$clr-mid-grey: rgb(153, 153, 153) !default;
+$clr-mid-grey: #999999 !default;
 
 /// @type Color
-$clr-dark-grey: rgb(68, 68, 68) !default;
+$clr-dark-grey: #444444 !default;
 // $color-grey-light-1: #f9f7f6;
 // $color-grey-light-2: #aaa;
 
-// $color-grey-dark-1: #54483A;
-// $color-grey-dark-2: #6D5D4B;
 /// Dark grey
 ///@type spacing system
 $spacing-xxxxl: 9.2rem;
@@ -43,8 +41,9 @@ $font-weight-semi-bold: 600;
 $font-weigh-bold: 700;
 
 /// @type type-scale
-// $fs-250: 1.2rem;
-// $fs-300: 1.4rem;
+$fs-200: 1rem;
+$fs-250: 1.2rem;
+$fs-300: 1.4rem;
 $fs-400: 1.44rem;
 $fs-500: 1.728rem;
 $fs-600: 2.2rem;
@@ -53,8 +52,9 @@ $fs-700: 3.1rem;
 $fs-800: 4rem;
 $fs-900: 6rem;
 
-//   --curr-screen-width: 100vw;
-//   --container-screen-ratio: calc(100vw * 0.1);
+// calcultions needed for responsive screen width
+$curr-screen-width: 100vw;
+$container-screen-ratio: calc(100vw * 0.1);
 /// Open Sans font family
 /// @type List
 $main-font-stack: "Open Sans", sans-serif !default;

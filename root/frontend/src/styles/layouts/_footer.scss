@@ -1,19 +1,43 @@
 @use "../abstracts/index" as a;
 .footer {
+  color: a.$clr-grey;
+  padding-bottom: a.$spacing-xxl;
   background-color: a.$clr-primary;
+  > div {
+    @include a.grid(a.$spacing-ml);
+  }
+  .footer-heading {
+    color: a.$clr-light-grey;
+    font-size: a.$spacing-m;
+    font-weight: a.$font-weight-semi-bold;
+    margin-bottom: a.$spacing-m + a.$spacing-s;
+    letter-spacing: -5%;
+  }
+
   .socials {
-    @include a.grid(a.$spacing-m);
-    .socials-header {
-      color: a.$clr-light-grey;
-      //   font-weight: a.$font-weight-regular;
-    }
     .socials-icons {
       @include a.flex-row(a.$spacing-m);
       justify-content: flex-start;
+      .socials-icon {
+        width: 24px;
+        height: 24px;
+        color: a.$clr-white;
+      }
     }
-    .socials-icon {
+  }
+  .contacts {
+    div {
+      @include a.grid(a.$spacing-m);
+    }
+  }
+  .accordion {
+    .icon {
       width: 24px;
       height: 24px;
+    }
+    @include a.grid(a.$spacing-ml - a.$spacing-xs);
+    .according-btn {
+      @include a.flex-row(a.$spacing-m);
     }
   }
 }

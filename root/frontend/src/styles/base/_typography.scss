@@ -1,10 +1,14 @@
 @use "../abstracts/index" as a;
+body {
+  font-family: a.$main-font-stack;
+  font-size: a.$fs-200;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: a.$main-font-stack;
   text-transform: uppercase;
+  font-weight: a.$font-weight-regular;
 }

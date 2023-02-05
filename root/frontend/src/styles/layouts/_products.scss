@@ -1,0 +1,13 @@
+@use "../abstracts/index" as a;
+.products-section {
+  .carousel {
+    position: relative;
+    overflow: hidden;
+
+    @include a.flex-row();
+    .slide {
+      position: absolute;
+      inset: 0%;
+    }
+  }
+}

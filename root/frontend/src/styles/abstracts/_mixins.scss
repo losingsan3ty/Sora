@@ -2,11 +2,13 @@
   background: url($url) no-repeat 35% center;
   background-size: cover;
 }
-@mixin flex-row($gap) {
+@mixin flex-row($gap: 0) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: $gap;
+  @if $gap {
+    gap: $gap;
+  }
 }
 @mixin grid($rowgap, $columngap: false) {
   display: grid;

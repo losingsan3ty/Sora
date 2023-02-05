@@ -1,5 +1,16 @@
 @use "../abstracts/index" as a;
 .container {
+  max-width: a.$curr-screen-width - a.$container-screen-ratio;
   margin: 0 auto;
-  padding: a.$spacing-l 0;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.section {
+  padding: a.$spacing-xl 0;
+}
+.border-bottom {
+  border-bottom: 1px solid a.$clr-white;
+  padding-bottom: a.$spacing-l;
 }
