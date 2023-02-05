@@ -1,8 +1,11 @@
+@use "../abstracts/index" as a;
 .hero {
-  .women-section {
-    background: url("../../assets/photos/women-model.jpg");
-  }
   .men-section {
-    background: url("./../../assets/photos/men-model.jpg");
+    // min-height: 100vh;
+    @include a.background-image("./../../assets/photos/men-model.jpg");
+  }
+  .women-section {
+    min-height: 100vh;
+    @include a.background-image("./../../assets/photos/women-model.jpg");
   }
 }

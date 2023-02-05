@@ -1,0 +1,5 @@
+@use "../abstracts/index" as a;
+.container {
+  margin: 0 auto;
+  padding: a.$spacing-l 0;
+}

@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 // primary color
 /// @type Color
-$clr-primary: rgb(0, 0, 0) !default;
+$clr-primary: #1a1a1a !default;
 
 // main white color
 /// @type Color
@@ -11,7 +11,8 @@ $clr-white: rgb(255, 255, 255) !default;
 
 /// Light grey
 /// @type Color
-$clr-light-grey: rgb(237, 237, 237) !default;
+
+$clr-light-grey: rgb(240, 240, 240) !default;
 
 /// Medium grey
 /// @type Color
@@ -25,7 +26,16 @@ $clr-dark-grey: rgb(68, 68, 68) !default;
 // $color-grey-dark-1: #54483A;
 // $color-grey-dark-2: #6D5D4B;
 /// Dark grey
-
+///@type spacing system
+$spacing-xxxxl: 9.2rem;
+$spacing-xxxl: 7.2rem;
+$spacing-xxl: 6.4rem;
+$spacing-xl: 4.8rem;
+$spacing-l: 3.2rem;
+$spacing-ml: 2.4rem;
+$spacing-m: 1.2rem;
+$spacing-s: 0.8rem;
+$spacing-xs: 0.4rem;
 /// @type Font-weight
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -51,7 +61,7 @@ $main-font-stack: "Open Sans", sans-serif !default;
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 360px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

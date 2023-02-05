@@ -1,0 +1,23 @@
+@use "../abstracts/index" as a;
+.header {
+  @include a.flex-row(12px);
+  margin: a.$spacing-m - a.$spacing-xs a.$spacing-m;
+  .logo {
+    font-size: a.$fs-500;
+    font-weight: a.$font-weight-regular;
+  }
+  .layout-header--left {
+    @include a.flex-row(a.$spacing-m);
+  }
+  .layout-header--right {
+    @include a.flex-row(a.$spacing-ml);
+  }
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .menu-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

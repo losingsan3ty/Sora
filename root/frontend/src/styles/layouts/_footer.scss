@@ -1,0 +1,19 @@
+@use "../abstracts/index" as a;
+.footer {
+  background-color: a.$clr-primary;
+  .socials {
+    @include a.grid(a.$spacing-m);
+    .socials-header {
+      color: a.$clr-light-grey;
+      //   font-weight: a.$font-weight-regular;
+    }
+    .socials-icons {
+      @include a.flex-row(a.$spacing-m);
+      justify-content: flex-start;
+    }
+    .socials-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

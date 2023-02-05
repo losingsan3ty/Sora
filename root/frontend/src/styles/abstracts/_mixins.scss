@@ -1,0 +1,18 @@
+@mixin background-image($url) {
+  background: url($url) no-repeat 35% center;
+  background-size: cover;
+}
+@mixin flex-row($gap) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap;
+}
+@mixin grid($rowgap, $columngap: false) {
+  display: grid;
+  grid-template-columns: 1fr;
+  @if $columngap {
+    column-gap: $columngap;
+  }
+  row-gap: $rowgap;
+}
