@@ -11,7 +11,6 @@
     font-size: a.$spacing-m;
     font-weight: a.$font-weight-semi-bold;
     margin-bottom: a.$spacing-m + a.$spacing-s;
-    letter-spacing: -5%;
   }
 
   .socials {
@@ -31,13 +30,24 @@
     }
   }
   .accordion {
+    @include a.grid(a.$spacing-ml - a.$spacing-xs);
     .icon {
       width: 24px;
       height: 24px;
     }
-    @include a.grid(a.$spacing-ml - a.$spacing-xs);
-    .according-btn {
-      @include a.flex-row(a.$spacing-m);
+    &-el {
+      @include a.grid(a.$spacing-ml - a.$spacing-xs);
+
+      .accordion-btn {
+        @include a.flex-row(a.$spacing-m);
+      }
+      .accordion-list {
+        ul {
+          @include a.grid(a.$spacing-m);
+          color: a.$clr-dark-3-grey;
+          transition: ease-in 0.2s all;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 @use "../abstracts/index" as a;
 .container {
-  max-width: a.$curr-screen-width - a.$container-screen-ratio;
+  max-width: a.$container-width;
   margin: 0 auto;
 }
 .icon {
@@ -13,4 +13,7 @@
 .border-bottom {
   border-bottom: 1px solid a.$clr-white;
   padding-bottom: a.$spacing-l;
+}
+.hidden {
+  display: none;
 }

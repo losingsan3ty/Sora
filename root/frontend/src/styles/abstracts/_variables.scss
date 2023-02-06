@@ -1,29 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-// primary color
+
 /// @type Color
 $clr-primary: #1a1a1a !default;
-
-// main white color
-/// @type Color
+$clr-dark-primary: #1c1c1c !default;
+$clr-dark-1-primary: #000000 !default;
 $clr-white: #ffffff !default;
-
-/// Light grey
-/// @type Color
-
 $clr-light-grey: #f0f0f0 !default;
-$clr-grey: #cccccc;
-/// Medium grey
-/// @type Color
-$clr-mid-grey: #999999 !default;
+$clr-grey: #cccccc !default;
+$clr-dark-1-grey: #c9c9c9 !default;
+$clr-dark-2-grey: #d9d9d9 !default;
+$clr-dark-3-grey: #a1a1a1 !default;
+$clr-dark-4-grey: #999999 !default;
 
-/// @type Color
-$clr-dark-grey: #444444 !default;
-// $color-grey-light-1: #f9f7f6;
-// $color-grey-light-2: #aaa;
-
-/// Dark grey
 ///@type spacing system
 $spacing-xxxxl: 9.2rem;
 $spacing-xxxl: 7.2rem;
@@ -34,11 +24,12 @@ $spacing-ml: 2.4rem;
 $spacing-m: 1.2rem;
 $spacing-s: 0.8rem;
 $spacing-xs: 0.4rem;
+$spacing-xxs: 0.2rem;
 /// @type Font-weight
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
-$font-weigh-bold: 700;
+$font-weight-bold: 700;
 
 /// @type type-scale
 $fs-200: 1rem;
@@ -52,16 +43,16 @@ $fs-700: 3.1rem;
 $fs-800: 4rem;
 $fs-900: 6rem;
 
+/// @type letter spacing
+$main-letter-spacing: -0.75px;
 // calcultions needed for responsive screen width
+///@type Length
 $curr-screen-width: 100vw;
 $container-screen-ratio: calc(100vw * 0.1);
+$container-width: $curr-screen-width - $container-screen-ratio;
 /// Open Sans font family
 /// @type List
 $main-font-stack: "Open Sans", sans-serif !default;
-
-/// Container's maximum width
-/// @type Length
-$max-width: 360px !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

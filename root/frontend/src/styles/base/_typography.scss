@@ -10,5 +10,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+  color: a.$clr-primary;
   font-weight: a.$font-weight-regular;
+  letter-spacing: a.$main-letter-spacing;
 }
