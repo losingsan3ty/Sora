@@ -30,22 +30,24 @@
     }
   }
   .accordion {
-    @include a.grid(a.$spacing-ml - a.$spacing-xs);
+    @include a.grid(0);
     .icon {
       width: 24px;
       height: 24px;
     }
     &-el {
       @include a.grid(a.$spacing-ml - a.$spacing-xs);
-
+      margin-bottom: a.$spacing-s;
       .accordion-btn {
         @include a.flex-row(a.$spacing-m);
       }
       .accordion-list {
+        transition: max-height 0.3s linear, opacity 0.35s linear;
+        overflow: hidden;
+        max-height: 0px;
         ul {
           @include a.grid(a.$spacing-m);
           color: a.$clr-dark-3-grey;
-          transition: ease-in 0.2s all;
         }
       }
     }

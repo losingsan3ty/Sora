@@ -10,11 +10,13 @@
     gap: $gap;
   }
 }
-@mixin grid($rowgap, $columngap: false) {
+@mixin grid($rowgap: 0, $columngap: 0) {
   display: grid;
   grid-template-columns: 1fr;
   @if $columngap {
     column-gap: $columngap;
   }
-  row-gap: $rowgap;
+  @if $rowgap {
+    row-gap: $rowgap;
+  }
 }
