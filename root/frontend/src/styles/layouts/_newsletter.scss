@@ -18,9 +18,9 @@
     display: flex;
 
     #email {
-      font-size: a.$fs-250;
+      font-size: a.$fs-200;
       border: none;
-      padding: a.$spacing-xxs;
+      padding: a.$spacing-xs a.$spacing-xxs;
       &::placeholder {
         color: a.$clr-dark-3-grey;
       }
