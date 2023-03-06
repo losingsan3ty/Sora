@@ -5,11 +5,15 @@
     margin-bottom: a.$spacing-ml;
     font-weight: a.$font-weight-bold;
   }
+
   .carousel {
-    overflow: hidden;
-    display: inline-flex;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 a.$spacing-ml;
     cursor: grab;
+    overflow: auto;
     .slide {
+      scroll-snap-align: start;
       min-height: 300px;
       min-width: 300px;
       &-img {

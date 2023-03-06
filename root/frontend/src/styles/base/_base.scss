@@ -26,7 +26,9 @@ ul {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 } */
-
+body {
+  overflow-x: hidden;
+}
 /* Make images easier to work with */
 img,
 picture,
@@ -46,7 +48,7 @@ select {
 button {
   border: none;
   width: auto;
-  overflow: visible;
+  overflow: hidden;
   background: transparent;
   color: inherit;
 }
