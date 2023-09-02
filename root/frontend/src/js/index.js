@@ -19,3 +19,28 @@ accordion.addEventListener("click", function (e) {
     accordionList.style.marginBottom = "0rem";
   }
 });
+/**
+ *
+ */
+const carousel = document.querySelector(".carousel");
+
+const carouselBtnContainer = document.querySelector(".carousel-btn-container");
+let currentSlide = 0;
+carouselBtnContainer.addEventListener("click", function (e) {
+  if (e.target.closest(".carousel-btn")) {
+    const slide = carousel.querySelectorAll(".slide");
+    if (e.target.closest(".carousel-btn--right")) {
+      if (currentSlide === slide.length - 1) currentSlide = 0;
+      else currentSlide++;
+    }
+    if (e.target.closest(".carousel-btn--left")) {
+      if (currentSlide === 0) currentSlide = slide.length - 1;
+      else currentSlide--;
+    }
+    slide[currentSlide].scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  }
+});

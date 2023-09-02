@@ -6,20 +6,31 @@
     font-weight: a.$font-weight-bold;
   }
 
+  .carousel-btn-container > button {
+    width: 32px;
+    height: 32px;
+    color: a.$clr-dark-1-primary;
+    margin-bottom: a.$spacing-m;
+    :active {
+      color: a.$clr-dark-4-grey;
+    }
+  }
   .carousel {
     display: flex;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 a.$spacing-ml;
     cursor: grab;
+    scroll-padding: 10rem 10rem;
     overflow: auto;
-    .slide {
-      scroll-snap-align: start;
-      min-height: 300px;
-      min-width: 300px;
-      &-img {
-        height: 100%;
-        width: 100%;
-      }
+  }
+
+  .slide {
+    scroll-snap-align: start;
+    min-height: 300px;
+    min-width: 300px;
+    &-img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
